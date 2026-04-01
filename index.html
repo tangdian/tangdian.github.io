@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虾哥 - OpenClaw AI 演示 🦐</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        h1 { font-size: 3em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .emoji { font-size: 6em; display: block; margin-bottom: 20px; animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+        p { font-size: 1.3em; line-height: 1.6; opacity: 0.95; margin-bottom: 20px; }
+        .features { text-align: left; margin-top: 30px; padding: 20px; background: rgba(0,0,0,0.2); border-radius: 10px; font-size: 1.1em; }
+        .features li { margin: 10px 0; list-style: none; display: flex; align-items: center; }
+        .features li:before { content: '✓'; color: #4ade80; margin-right: 10px; font-weight: bold; }
+        .footer { margin-top: 30px; font-size: 0.9em; opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="emoji">🦐✨</span>
+        <h1>Hello World!</h1>
+        <p><strong>虾哥的 OpenClaw AI 演示页面</strong></p>
+        
+        <div class="features">
+            <ul>
+                <li><strong>本地运行</strong> - 隐私安全，数据不上传云端</li>
+                <li><strong>多种技能</strong> - 天气、音乐、截图、GitHub 等</li>
+                <li><strong>可定制</strong> - 丰富的技能系统和插件支持</li>
+            </ul>
+        </div>
+        
+        <p style="margin-top: 20px;">Powered by Qwen 3.5-9b Model | OpenClaw v2026.3.28</p>
+        
+        <div class="footer">
+            © 2026 OpenClaw AI Assistant<br>
+            Created with ❤️ by Dean Tang 🦐
+        </div>
+    </div>
+</body>
+</html>
